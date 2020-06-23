@@ -1,0 +1,16 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-image: url("../img/banner/slider1.jpg");
+    background-size: 100%,100%;
+    overflow: hidden;
+}
+span {
+    display: inline-block;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}

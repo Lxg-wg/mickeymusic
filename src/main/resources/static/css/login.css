@@ -1,0 +1,87 @@
+#login_reg{
+    width:23vw;
+    height: 64vh;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 67vw;
+    display: none;
+    opacity: 0;
+    z-index: 10;
+}
+#login_reg span{
+    text-align: center;
+    width: 80%;
+    height: 12%;
+    position: relative;
+    left: 10%;
+    top: 5vh;
+    color: #EFEFF4;
+}
+.modify{
+    margin-top: 6vh;
+}
+#login_reg input:not(#autoLogin){
+    margin-top: 10vh;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: white 1px solid;
+    background: none;
+    outline: 0;
+    caret-color: white;
+}
+#reg{
+    display: none;
+}
+#login_reg #login,#login_reg #reg{
+margin-top: 3vh;
+}
+#login_reg #login [type=submit],#login_reg #reg [type=submit]{
+    width: 60%;
+    color:white;
+    position: relative;
+    top: 8vh;
+    left: 20%;
+    height: 6vh;
+    border: none;
+    background: red;
+}
+#login_reg #login #toReg{
+    width: 5vw;
+    position: relative;
+    top: 9.5vh;
+    left:17vw;
+    font-size: 12px;
+    color:#6d6d6d ;
+}
+#login_reg #reg #toLogin{
+    width: 5vw;
+    position: relative;
+    top: 14vh;
+    left:3vw;
+    font-size: 12px;
+    color:#6d6d6d ;
+}
+#login_reg #reg #toLogin:hover,#login_reg #login #toReg:hover{
+    color: #00c85f;
+}
+#forAutoLogin{
+    font-size: 12px;
+    color: #EFEFF4;
+    opacity: 0.8;
+    position: relative;
+    top: 1.5vh;
+    left: -1vw;
+    cursor: pointer;
+}
+#autoLogin{
+    width: 12px !important;
+    height: 12px;
+    position: relative;
+    left: -0.5vw;
+    top: 1.8vh;
+    cursor: pointer;
+}

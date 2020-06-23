@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="indi.wwq.mickey.mapper.GpSongInfoMapper">
+  <resultMap id="BaseResultMap" type="indi.wwq.mickey.pojo.GpSongInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="song_id" jdbcType="VARCHAR" property="songId" />
+    <result column="song_name" jdbcType="VARCHAR" property="songName" />
+    <result column="singer_name" jdbcType="VARCHAR" property="singerName" />
+    <result column="albumId" jdbcType="VARCHAR" property="albumid" />
+    <result column="song_interval" jdbcType="INTEGER" property="songInterval" />
+    <result column="song_mid" jdbcType="VARCHAR" property="songMid" />
+  </resultMap>
+</mapper>

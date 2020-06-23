@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Mickey Music</title>
+</head>
+<link rel="stylesheet" th:href="@{/static/css/index.css}">
+<link rel="stylesheet" th:href="@{/static/css/head.css}">
+<link rel="stylesheet" th:href="@{/static/css/tip.css}">
+<link rel="stylesheet" th:href="@{/static/css/footer.css}">
+<link rel="stylesheet" th:href="@{/static/css/login.css}">
+<link rel="stylesheet" th:href="@{/static/css/history.css}">
+<link rel="shortcut icon" th:href="@{../static/favicon.ico}"/>
+<link rel="bookmark" th:href="@{../static/favicon.ico}"/>
+<body>
+<div id="main">
+    <div th:replace="/thymeleaf/common/head :: head"></div>
+    <div th:replace="/thymeleaf/common/login :: login"></div>
+    <div th:replace="/thymeleaf/common/tip :: tip"></div>
+    <div th:replace="/thymeleaf/common/history :: history"></div>
+    <div th:replace="/thymeleaf/common/footer :: footer"></div>
+    <div th:replace="/thymeleaf/common/data :: scripts(~{this :: .custom-script})"></div>
+</div>
+<script th:src="@{/static/js/jquery.js}"></script>
+<script th:src="@{/static/js/tool.js}"></script>
+<script th:src="@{/static/js/history.js}"></script>
+<script th:src="@{/static/js/login.js}"></script>
+<script th:src="@{/static/js/propress.js}"></script>
+<script th:src="@{/static/js/footer.js}"></script>
+<script th:src="@{/static/js/index.js}"></script>
+<script th:src="@{/static/js/tip.js}"></script>
+
+</body>
+</html>
