@@ -1,0 +1,178 @@
+span {
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+    display: inline-block;
+    cursor:pointer;
+}
+img{
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+#footer {
+    position: fixed;
+    left: 11.9vw;
+    bottom: 0;
+    width: 87vw;
+    height: 20vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+#album_art{
+    position: absolute;
+    left: -10.5vw;
+    width: 23vh;
+    height: 20vh;
+}
+#footer #musicBar {
+    width: 83vw;
+    position: relative;
+    left: 5%;
+    top: 21%;
+}
+
+#musicBar #playOptions span {
+    margin-left: 6px;
+}
+
+#musicBar #playOptions span img {
+    width: 20px;
+    height: 20px;
+}
+
+#musicBar #playOptions #playToggle {
+    position: relative;
+    top: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+#musicBar #musicInfo {
+    position: absolute;
+    left: 14%;
+    top: -1%;
+    color: #ffffff;
+}
+
+#musicBar #musicInfo #song {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+#musicBar #musicInfo #singer {
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+#musicBar #imagePlayOptions {
+    position: absolute;
+    left: 24%;
+    top: 1.5%;
+}
+
+#musicBar #imagePlayOptions img {
+    margin-left: 11px;
+    width: 17px;
+    height: 17px;
+    opacity: 0.6;
+}
+
+
+#musicBar #voice {
+    position: relative;
+    left: 49%;
+    top: -34.8%;
+}
+#musicBar #voice .bullet{
+    left: 127px ;
+}
+.bullet {
+    width: 12px;
+    height: 12px;
+    -moz-user-select:all;
+    -webkit-user-select:all;
+    user-select:all;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: -0.4vw;
+    cursor:pointer;
+
+}
+
+#musicBar #voice img {
+    cursor:pointer;
+    width: 22px;
+    height: 22px;
+    opacity: 0.7;
+    position: absolute;
+    top: 24%;
+    left: -4.5%;
+}
+
+#musicBar #voice progress {
+    width: 210px;
+    height: 4px;
+    color: #f00;
+    background: #EFEFF4;
+    margin-bottom: 2px;
+    cursor:pointer;
+
+}
+
+#musicBar #seekBar {
+    width: 93%;
+    height: 10px;
+    position: absolute;
+    left: 4%;
+    top: 38%;
+}
+
+#musicBar #seekBar #now {
+    position: absolute;
+    left: -6%;
+    top: 8px;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.6;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+#musicBar #seekBar #total {
+    position: absolute;
+    left: 95.5%;
+    top: 8px;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+#musicBar #seekBar progress {
+    width: 900px;
+    height: 3px;
+    color: #f00;
+    border-radius: 10px;
+    background: #EFEFF4;
+    margin-bottom: 2px;
+    cursor:pointer
+}
+
+#musicBar #seekBar progress::-webkit-progress-value {
+    background: #00c85f;
+}
+
+/* 表示总长度背景色 */
+progress::-webkit-progress-bar {
+    background-color: #2b2b2b;
+}
+
+/* 表示已完成进度背景色 */
+progress::-webkit-progress-value {
+    background: #aaa;
+}

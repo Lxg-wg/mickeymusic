@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header id="header" th:fragment="head">
+    <div id="primary">
+        <img id="logo" src="../../../static/img/icon/logo.png" alt="mickey music" title="mickey music">
+        <nav id="nav">
+            <span class="current"><a href="/mickey/index">首&nbsp;&nbsp;页</a></span>
+            <span><a href="">我的音乐</a></span>
+            <span><a href="">入驻平台</a></span>
+            <span><a href="">会员中心</a></span>
+            <span><a href="">联系我们</a></span>
+        </nav>
+        <div id="search">
+            <form th:action="@{/list/search}" id="search_form" th:method="get" method="get" autocomplete="off">
+                <label for="searchKey"></label>
+                <!--/*@thymesVar id="searchKey" type=""*/-->
+                <input type="text" th:placeholder="${searchKey}" id="searchKey" name="searchKey" placeholder="刘德华"/>
+                <input type="submit" id="sendKey" value=" "/>
+            </form>
+        </div>
+        <div id="extensions">
+            <span><img src="../../../static/img/icon/music.png" id="toggleMusicBar" alt="关闭底部音乐栏"/></span>
+            <img src="../../../static/img/icon/user.png" id="user" alt="用户" title="用户">
+            <p id="userStatus"><img src="../../../static/img/icon/error.png" alt="未登录" title="未登录"></p>
+            <img src="../../../static/img/icon/share.png" id="share" alt="分享" title="分享">
+            <img src="../../../static/img/icon/store.png" id="store" alt="商店" title="商店">
+            <img src="../../../static/img/icon/screenshot.png" id="screenshot" alt="快速截图" title="快速截图">
+            <img src="../../../static/img/icon/menu.png" id="menu" alt="菜单" title="菜单">
+        </div>
+    </div>
+</header>
+</body>
+</html>

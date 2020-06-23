@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+</style>
+<body>
+<div th:fragment="login">
+   <div id="login_reg">
+       <form id="login" onsubmit="return false" action="#" method="post" autocomplete="off">
+           <span>登录Mickey音乐</span>
+           <div class="modify">
+           <label>
+               <input type="text" name="userId" id="userId" placeholder="输入账号" autocomplete="off">
+           </label>
+           <label>
+               <input type="password" name="password" id="password" placeholder="输入密码" autocomplete="off">
+           </label>
+           <button type="submit" id="send_login">登&nbsp;&nbsp;&nbsp;录</button>
+               <input type="checkbox" id="autoLogin" name="autoLogin">
+               <label for="autoLogin" id="forAutoLogin" >下次自动登录</label>
+               <span id="toReg">注册</span>
+           </div>
+       </form>
+       <form id="reg" onsubmit="return false" action="#" method="post">
+           <span>注册Mickey音乐</span>
+           <div class="modify">
+           <label>
+               <input type="text" name="nickname" id="nickname" placeholder="输入昵称">
+           </label>
+           <label>
+               <input type="password"  name="password" id="reg_password" placeholder="输入密码">
+           </label>
+           <button type="submit" id="send_reg">注&nbsp;&nbsp;&nbsp;册</button>
+           <span id="toLogin">登录</span>
+           </div>
+       </form>
+   </div>
+</div>
+
+</body>
+</html>
