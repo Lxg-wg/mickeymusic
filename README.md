@@ -1,9 +1,9 @@
 # 项目功能详情
 * 首页展示
-![image](https://github.com/Lxg-wg/mickeymusic/assets/50795940/d7988620-5262-4cfd-90e3-bceb9d24de3a)
+![img_2](https://github.com/Lxg-wg/mickeymusic/assets/50795940/f545d509-72ab-4e90-99af-5bb792a7f048)
 
 * 搜索功能
-![img_3.png](img_3.png)
+![Uploading img_3.png…]()
 * 收藏列表
 ![img_4.png](img_4.png)
 * 会员功能
