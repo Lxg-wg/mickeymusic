@@ -1,4 +1,4 @@
-# 项目功能详情
+# 项目功能
 * 首页展示
 ![img_2](https://github.com/Lxg-wg/mickeymusic/assets/50795940/f545d509-72ab-4e90-99af-5bb792a7f048)
 
